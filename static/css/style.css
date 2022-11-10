@@ -29,3 +29,26 @@
     text-align: center;
     font-size: 18px;
 }
+.inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.input{
+    width: 25%;
+    height: 10%;
+}
+.inputs2{
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
