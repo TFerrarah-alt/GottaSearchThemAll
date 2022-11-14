@@ -29,32 +29,8 @@
     text-align: center;
     font-size: 18px;
 }
-.inputs{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 12px;
-    padding-bottom: 5%;
-    padding-top: 5%;
-}
-.input{
-    width: 25%;
-    height: 10%;
-}
-.inputs2{
-    padding-top: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 12px;
-}
 .firstRow{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,7 +47,6 @@
 }
 .secondRow{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -82,7 +57,7 @@
     width: 20rem;
     height: 3.5rem;
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #94E1A5;
@@ -92,4 +67,78 @@
     color: #fff;
     font-family: 'Inter', sans-serif;
     border:none;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hp{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.atk{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.def{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spatk{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spdef{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.speed{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 24rem;
+    height: 3rem;
+    border: none;
+    border: 1px solid #000;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    margin-left: 1rem;
+}
+input::placeholder{
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    opacity: 0.2;
 }
