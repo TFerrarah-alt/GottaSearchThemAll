@@ -14,19 +14,36 @@
             <strong>Benvenuto</strong> nel tuo motore di ricerca per Pokémon. Potrai inserire le caratteristiche di un <strong>Pokémon fittizio</strong> e il back-end <br>
             cercherà grazie all’algoritmo di Machine Learning <strong>KNN (K-Nearest Neighbors)</strong> i 5 Pokémon più simili a quello che hai<br>inserito.</p>
         <form action="./index.php" method="post">
-                <label for="">Punti Vita (HP):</label>
-                <input type="number" name="HP">
-                <label for="">Punti Attacco (Attack):</label>
-                <input type="number" name="ATT">                
-                <label for="">Punti difesa (Defense)</label>
-                <input type="number" name="DEF">                
-                <label for="">Punti Attacco Speciale (Sp. Atk):</label>
-                <input type="number" name="SPK">                
-                <label for="">Punti Difesa Speciale (Sp. Defense):</label>
-                <input type="number" name="SPDEF">                
-                <label for="">Punti velocità (Speed)</label>
-                <input type="number" name="SPEED">                
-                <button type="submit">CERCA</button>
+            <div class="firstRow">
+                <div class="hp">
+                    <label class="label" for="">Punti Vita (HP):</label>
+                    <input placeholder="Inserisci un numero da 0 a 300" type="text" name="HP">
+                </div>
+                <div class="atk">
+                    <label class="label" for="">Punti Attacco (Attack):</label>
+                    <input placeholder="Inserisci un numero da 0 a 300" type="text" name="ATT">
+                </div>
+                <div class="def">
+                    <label class="label" for="">Punti difesa (Defense)</label>
+                    <input placeholder="Inserisci un numero da 0 a 300" type="text" name="DEF"> 
+                </div>
+            </div>
+                      
+            <div class="secondRow">
+                <div class="spatk">                
+                    <label class="label" for="">Punti Attacco Speciale (Sp. Atk):</label>
+                    <input placeholder="Inserisci un numero da 0 a 300" type="text" name="SPK">  
+                </div>
+                <div class="spdef">
+                    <label class="label" for="">Punti Difesa Speciale (Sp. Defense):</label>
+                    <input placeholder="Inserisci un numero da 0 a 300" type="text" name="SPDEF">       
+                </div>             
+                <div class="speed">
+                    <label class="label" for="">Punti velocità (Speed)</label>
+                    <input placeholder="Inserisci un numero da 0 a 300" type="text" name="SPEED">
+                </div>
+            </div>
+                <a href="#" class="btn">CERCA</a>
         </form>
     </section>
     <script src="../static/js/script.js"></script>
