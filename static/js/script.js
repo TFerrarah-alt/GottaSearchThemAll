@@ -1,6 +1,9 @@
-input= document.querySelectorAll('input-field')
-input.addEventListener('ch', function(){
-    if(input.value.length > 0){
-    console.log('change')
+var inputField = document.querySelectorAll('.input-field');
+inputField.addEventListener('event', function() {
+    if(inputField.keycode === 13 && inputField.value === '') {
+        inputField.classlist.add('bounce')
     }
-})
+});
+
+
+
