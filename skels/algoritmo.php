@@ -4,7 +4,7 @@ main();
 function main() {
     global $all_dim;
     $all_dim = array();
-    $csv = array_map('str_getcsv', file('pokemon.csv')); //leggiamo il file csv
+    $csv = array_map('str_getcsv', file('../data/pokemon.csv')); //leggiamo il file csv
     foreach ($csv as $line) {
         formula($line[5], $line[6], $line[7], $line[8], $line[9], $line[10], $all_dim);
     }
@@ -14,12 +14,12 @@ function main() {
 
 function formula($hp, $attack, $defense, $sp_attack, $sp_defense, $speed, &$all_dim) {
     // applico la formula euclideana
-    $dim1 = ((int)$_POST["hp"] - (int)$hp);
-    $dim2 = ((int)$_POST["attack"] - (int)$attack);
-    $dim3 = ((int)$_POST["defense"] - (int)$defense);
-    $dim4 = ((int)$_POST["atkSp"] - (int)$sp_attack);
-    $dim5 = ((int)$_POST["defSp"] - (int)$sp_defense);
-    $dim6 = ((int)$_POST["speed"] - (int)$speed);
+    $dim1 = ((int)$_POST["HP"] - (int)$hp);
+    $dim2 = ((int)$_POST["ATT"] - (int)$attack);
+    $dim3 = ((int)$_POST["DEF"] - (int)$defense);
+    $dim4 = ((int)$_POST["SPK"] - (int)$sp_attack);
+    $dim5 = ((int)$_POST["SPDEF"] - (int)$sp_defense);
+    $dim6 = ((int)$_POST["SPEED"] - (int)$speed);
     $pd1 = pow($dim1, 2);
     $pd2 = pow($dim2, 2);
     $pd3 = pow($dim3, 2);
