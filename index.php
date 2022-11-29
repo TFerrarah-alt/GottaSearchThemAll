@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/style.css"/>
     <title>Skel</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
         <strong>KNN (K-Nearest Neighbors)</strong> i 5 Pokémon più simili a
         quello che hai<br />inserito.
       </p>
-      <form action="find.php" method="post">
+      <form action="./index.php" method="post">
         <div class="firstRow">
           <div class="hp">
             <label class="label" for="">Punti Vita (HP)</label>
@@ -94,7 +94,7 @@
         <div class="cardcontainer">
           <div class="container">
             <div class="imgcontainer">
-              <img class="cardimg" name="pokemonIMG" src="../static/images/pokemon/sugimori/1.png" alt="" />
+              <img class="cardimg" name="pokemonIMG" src="" alt="" />
             </div>
             <div class="statscotainer">
               <h3 class="cardname" name="pokemonName"></h3>
@@ -104,7 +104,7 @@
               </p>
               <div class="cardstats">
                 <div>
-                  <p>HP <span class="bold" name="pokemonHP"></span></p>
+                  <p>HP <span class="bold" name="pokemonHP"> <?php $_GET['dim1']?></span></p>
                   <p>Atk <span class="bold" name="pokemonATK"></span></p>
                   <p>Def <span class="bold" name="pokemonDEF"></span></p>
                 </div>
@@ -130,7 +130,7 @@
               </p>
               <div class="cardstats">
                 <div>
-                  <p>HP <span class="bold" name="pokemonHP"></span></p>
+                  <p>HP <span class="bold" name="pokemonHP"><?php $_GET['dim1']?></span></p>
                   <p>Atk <span class="bold" name="pokemonATK"></span></p>
                   <p>Def <span class="bold" name="pokemonDEF"></span></p>
                 </div>
@@ -156,7 +156,7 @@
               </p>
               <div class="cardstats">
                 <div>
-                  <p>HP <span class="bold" name="pokemonHP"></span></p>
+                  <p>HP <span class="bold" name="pokemonHP"><?php $_GET['dim1']?></span></p>
                   <p>Atk <span class="bold" name="pokemonATK"></span></p>
                   <p>Def <span class="bold" name="pokemonDEF"></span></p>
                 </div>
@@ -182,7 +182,7 @@
               </p>
               <div class="cardstats">
                 <div>
-                  <p>HP <span class="bold" name="pokemonHP"></span></p>
+                  <p>HP <span class="bold" name="pokemonHP"><?php $_GET['dim1']?></span></p>
                   <p>Atk <span class="bold" name="pokemonATK"></span></p>
                   <p>Def <span class="bold" name="pokemonDEF"></span></p>
                 </div>
@@ -208,7 +208,7 @@
               </p>
               <div class="cardstats">
                 <div>
-                  <p>HP <span class="bold" name="pokemonHP"></span></p>
+                  <p>HP <span class="bold" name="pokemonHP"><?php $_GET['dim1']?></span></p>
                   <p>Atk <span class="bold" name="pokemonATK"></span></p>
                   <p>Def <span class="bold" name="pokemonDEF"></span></p>
                 </div>
