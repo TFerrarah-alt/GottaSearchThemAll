@@ -5,7 +5,7 @@ main();
 function main() {
     global $all_dim;
     $all_dim = array();
-    $csv = array_map('str_getcsv', file('http://localhost/pokemon/data/pokemon.csv')); //leggiamo il file csv
+    $csv = array_map('str_getcsv', file('http://localhost/GottaSearchThemAll/data/pokemon.csv')); //leggiamo il file csv
     foreach ($csv as $line) {
         formula($line[5], $line[6], $line[7], $line[8], $line[9], $line[10], $all_dim);
     }
@@ -47,7 +47,7 @@ function ricerca($all_dim,$csv) {
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/pokemon/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -76,7 +76,7 @@ function ricerca($all_dim,$csv) {
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/pokemon/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -104,7 +104,7 @@ function ricerca($all_dim,$csv) {
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/pokemon/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -132,7 +132,7 @@ function ricerca($all_dim,$csv) {
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/pokemon/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -159,7 +159,7 @@ function ricerca($all_dim,$csv) {
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/pokemon/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
