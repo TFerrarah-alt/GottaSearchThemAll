@@ -35,19 +35,17 @@ function formula($hp, $attack, $defense, $sp_attack, $sp_defense, $speed, &$all_
 
 
 function ricerca($all_dim,$csv) {
-    // Ricerca del valore minimo nell'array e della sua posizione ( KEY )
-    $min = min($all_dim);
-    $key = array_search($min, $all_dim);
     $n = 0;
+
+    array_multisort($all_dim, $csv);
+
     // stampo il risultato
     foreach ($csv as $line){
-        if ($n == $key-2){
-            //echo $line[1]." ".$line[2]." ".$line[5]." ".$line[6]." ".$line[7]." ".$line[8]." ".$line[9]." ".$line[10]." ".$line[11]."<br>";
-
+        if ($n == 0){
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='../static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -72,11 +70,11 @@ function ricerca($all_dim,$csv) {
           </div>";
 
         }
-        if ($n == $key-1){
+        if ($n == 1){
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='../static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -100,11 +98,11 @@ function ricerca($all_dim,$csv) {
             </div>
           </div>";
         }
-        if ($n == $key){
+        if ($n == 2){
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='../static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -128,11 +126,11 @@ function ricerca($all_dim,$csv) {
             </div>
           </div>";
         }
-        if ($n == $key+1){
+        if ($n == 3){
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='../static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
@@ -155,11 +153,11 @@ function ricerca($all_dim,$csv) {
               </div>
             </div>
           </div>";        }
-        if ($n == $key+2){
+        if ($n == 4){
             echo " <div class='cardcontainer'>
             <div class='container'>
               <div class='imgcontainer'>
-                <img class='cardimg' name='pokemonIMG' src='http://localhost/GottaSearchThemAll/static/images/".$line[0].".png' alt=".$line[1]." />
+                <img class='cardimg' name='pokemonIMG' src='../static/images/".$line[0].".png' alt=".$line[1]." />
               </div>
               <div class='statscotainer'>
                 <h3 class='cardname' name='pokemonName'>".$line[1]."</h3>
