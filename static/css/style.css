@@ -145,7 +145,7 @@ input::placeholder{
     text-align: center;
     opacity: 0.2;
 }
-input:focus{
+input:focus:not(.invalid){
     outline: 2.5px solid #94E1A5;
 }
 .hidden{
@@ -220,4 +220,7 @@ input:focus{
     align-items: center;
     max-width: 85px;
     max-height: 85px;
+}
+.invalid{
+    border: 2.5px solid #E36736;
 }

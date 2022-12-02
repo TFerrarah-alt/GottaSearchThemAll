@@ -26,7 +26,7 @@
               required
               class="input-field"
               placeholder="Inserisci un numero da 0 a 300"
-              type="number"
+              type="text"
               name="hp"
             />
           </div>
@@ -36,7 +36,7 @@
               required
               class="input-field"
               placeholder="Inserisci un numero da 0 a 300"
-              type="number"
+              type="text"
               name="attack"
             />
           </div>
@@ -46,7 +46,7 @@
               required
               class="input-field"
               placeholder="Inserisci un numero da 0 a 300"
-              type="number"
+              type="text"
               name="defense"
             />
           </div>
@@ -59,7 +59,7 @@
               required
               class="input-field"
               placeholder="Inserisci un numero da 0 a 300"
-              type="number"
+              type="text"
               name="atkSp"
             />
           </div>
@@ -71,7 +71,7 @@
               required
               class="input-field"
               placeholder="Inserisci un numero da 0 a 300"
-              type="number"
+              type="text"
               name="defSp"
             />
           </div>
@@ -81,13 +81,13 @@
               required
               class="input-field"
               placeholder="Inserisci un numero da 0 a 300"
-              type="number"
+              type="text"
               name="speed"
             />
           </div>
         </div>
         <div class="ktm">
-          <input type="submit" href="#" class="btn" value="CERCA" />
+          <input type="submit" class="btn" value="CERCA" />
         </div>
       </form>
       <div class="containers">

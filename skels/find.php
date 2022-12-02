@@ -5,7 +5,7 @@ main();
 function main() {
     global $all_dim;
     $all_dim = array();
-    $csv = array_map('str_getcsv', file('http://localhost/GottaSearchThemAll/data/pokemon.csv')); //leggiamo il file csv
+    $csv = array_map('str_getcsv', file('../data/pokemon.csv')); //leggiamo il file csv
     foreach ($csv as $line) {
         formula($line[5], $line[6], $line[7], $line[8], $line[9], $line[10], $all_dim);
     }
