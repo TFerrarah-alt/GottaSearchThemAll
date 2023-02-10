@@ -7,11 +7,15 @@ function checker () {
         sort[i].classList.remove('invalid')
         }
     }
+    let prova = document.querySelectorAll(".invalid");
+    return prova.length === 0
     }
-let btn = document.querySelector('.btn')
 
-btn.addEventListener('click', function (event) {
-    event.preventDefault()
-    checker()
+let form = document.querySelector('form')
+
+form.addEventListener('submit', function (event) {
+    if(checker() === false){
+        event.preventDefault()
+    }
 })
 
